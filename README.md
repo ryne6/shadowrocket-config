@@ -26,8 +26,11 @@ https://raw.githubusercontent.com/ryne6/shadowrocket-config/main/modules/claude-
 - Node subscriptions stay inside Shadowrocket and are never committed.
 - `US-Auto` dynamically matches node names containing `🇺🇸` or `美国`.
 - `TW-Auto` dynamically matches node names containing `🇹🇼`, `台湾`, or `台灣`.
-- Claude and Anthropic rules use `US-Auto`.
-- Other international rules continue to use the currently selected `PROXY`.
+- `HK-Auto`, `JP-Auto`, `SG-Auto`, and `KR-Auto` provide the same regional failover.
+- `GLOBAL` selects the default policy for other international traffic and defaults to the current `PROXY` node.
+- OpenAI uses `TW-Auto`.
+- Claude, Anthropic, Gemini, and TikTok use `US-Auto`.
+- Other international rules use `GLOBAL`.
 
 ## Safety
 
