@@ -1,0 +1,15 @@
+#!name=Claude 美国自动分流
+#!desc=Claude 和 Anthropic 使用主配置中的 US-Auto 代理组。
+
+[Rule]
+DOMAIN-SUFFIX,anthropic.com,US-Auto
+DOMAIN-SUFFIX,claude.ai,US-Auto
+DOMAIN-SUFFIX,claude.com,US-Auto
+DOMAIN-SUFFIX,clau.de,US-Auto
+DOMAIN-SUFFIX,claudemcpclient.com,US-Auto
+DOMAIN-SUFFIX,claudemcpcontent.com,US-Auto
+DOMAIN-SUFFIX,claudeusercontent.com,US-Auto
+DOMAIN,anthropic.auth0.com,US-Auto
+DOMAIN,anthropic.com.cdn.cloudflare.net,US-Auto
+DOMAIN,anthropic-com.ghost.io,US-Auto
+DOMAIN,servd-anthropic-website.b-cdn.net,US-Auto
